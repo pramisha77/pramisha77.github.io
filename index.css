@@ -1,0 +1,372 @@
+*{
+    margin: 0;
+    padding:0;
+}
+.container{
+width:100%;
+height: 100%;
+background-color: azure;
+display: flex;
+justify-content: center;
+/* align-items: center; */
+flex-direction: column;
+
+}
+.container .navbar{
+    width:100%;
+    height: 60px;
+    background-color: rgb(64, 243, 243);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+     
+  
+}
+.container .navbar .logo{
+    width: 5px;
+    /* border: 1px solid black; */
+
+}
+.container .navbar .menu{
+width:100%;
+margin: 2px;
+/* border: 1px solid black; */
+
+
+
+
+}
+
+.container .navbar .menu ul{
+    display: flex;
+    width:100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid black; */
+    list-style: none;
+
+
+
+}
+.container .navbar .menu ul a{
+    text-decoration: none;
+    color:rgb(72, 61, 16);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.container .navbar .menu ul a:hover{
+    color: rgb(28, 5, 28);
+    
+} 
+.container .hero
+{
+    width: 100%;
+    height:calc(100vh - 60px) ;
+    display: flex ;
+    border: 1px solid red;
+    flex-direction: row;
+    align-items: center;
+    /* padding: 0 20px; */
+
+
+}
+.container .hero .right, .container .hero .left{
+    width: 50%;
+    height:100% ;
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    /* padding: 0 20px; */
+
+}
+.container .hero .left{
+    padding: 20px;
+}
+
+
+.container .hero .right{
+    justify-content: center;
+    align-items: center;
+}
+.container .hero .right img{
+    height: 100px;
+     width: 100px;
+     align-items: center;
+     box-shadow: 10px 10px 10px rgb(170, 247, 247);
+}
+.container .hero .left h1{
+    font-family: 'Courier New', Courier, monospace;
+
+    
+}
+.container .hero .left p{
+    font-size: ;
+    color: blueviolet;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 3px 3px;
+}
+.container .hero .left a button{
+    padding: 10px 20px;
+    background-color: rgb(128, 162, 73);
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    margin-top: 10px ;
+    color: white;
+}
+.container .service{
+    width: 100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     /* align-items: center; */
+     padding: 20px;
+}
+
+.container .service h1{
+    font-size: 2rem;
+    color: darkviolet;
+    font-family: cursive;
+    text-align: center;
+
+}
+
+.container .service p{
+    font-size: 1.1rem;
+    color: darkviolet;
+    font-family: serif;
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+.container .service .service-container{
+width: 100%;
+height: 100%;
+
+display: flex;
+justify-content: space-around;
+/* border: 1px solid black; */
+flex-direction: row;
+align-items: center;
+padding: 20px;
+
+}
+.container .service .service-container .service-box {
+    width: 300px;
+    border: 1px solid rgb(111, 116, 111);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 10px rgb(128, 162, 73);
+   
+} 
+.container .service .service-container .service-box img{
+    height: 250px;
+    box-shadow: 0 0 5px rebeccapurple;
+
+}
+.container .service .service-container .service-box h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    color: cadetblue;
+    margin-top: 10px;
+
+
+}
+.container .service .service-container .service-box p{
+    font-size: 1.1rem;
+    color: rgb(106, 148, 64);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    
+}
+.container .portfolio{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid green;
+
+}
+.container .portfolio h1{
+    font-size: 2rem;
+    color: cadetblue;
+    font-family: cursive Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.container .portfolio p{
+    font-size: 1.1 rem;
+    color: cornflowerblue;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.container .portfolio .portfolio-container{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    /* border: 1px solid green; */
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+    /* align-items: center; */
+    /* padding: 20px; */
+
+}
+.container .portfolio .portfolio-container .portfolio-box{
+    width: 90%;
+    margin: auto;
+    /* border: 1px solid green; */
+    display: flex;
+    margin-top: 30px;
+    flex-direction: row;
+    border-radius: 10px;
+    padding: 20px;
+    justify-content: space-around;
+    text-align: center;
+    box-shadow: 0px 0px 10px 10px rgba(28, 109, 125, 0.1);
+
+}
+.container .portfolio .portfolio-container .portfolio-box:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+.container .portfolio .portfolio-container .portfolio-box .Description{
+    width: 50%;
+    display: flex;
+    /* border: 1px solid green; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+    padding: 20px;
+
+}
+
+
+.container .portfolio .portfolio-container .portfolio-box .Description .title h2{
+    font-size: 1.5rem;
+    color: #1C6D7E;
+    font-family: cursive, Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+}
+
+.container .portfolio .portfolio-container .portfolio-box .Description .title p{
+    font-size: 1.1rem;
+    color: #1A1A1A;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+}
+
+.container .portfolio .portfolio-container .portfolio-box .Description .link a button {
+    padding: 10px 20px;
+    background-color: #1C6D7E;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+} 
+
+
+
+.container .contact{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 20px; */
+    /* border: 1px solid green; */
+}
+
+.container .contact h1{
+    font-size: 2rem;
+    color: #1C6D7E;
+    font-family: cursive, Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.container .contact p{
+    font-size: 1.1rem;
+    color: #1A1A1A;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.container .contact .contact-form{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    /* padding: 20px; */
+}
+
+.container .contact .contact-form input, .container .contact .contact-form textarea{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #1C6D7E;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container .contact .contact-form button{
+    padding: 10px 20px;
+    background-color: #1C6D7E;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+.container .footer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 20px; */
+    /* border: 1px solid green; */
+}
+
+.container .footer p{
+    font-size: 1.1rem;
+    color: #1C6D7E;
+    font-family: cursive, Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.container .footer .social-media{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.container .footer .social-media a{
+    text-decoration: none;
+    color: #1C6D7E;
+    font-size: 1.5rem;
+    margin: 0 10px;
+}
